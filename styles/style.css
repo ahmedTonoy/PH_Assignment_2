@@ -80,27 +80,27 @@ nav{
 
 .banner-info h1{
     font-weight: bold;
-    font-size: 65px;
+    font-size: 4rem;
     margin-bottom: 13px;
 }
 .banner-info span{
     color: rgba(233, 90, 8, 1);
 }
 .banner-info p{
-    font-size: 22px;
+    font-size: 1.38rem;
     color: rgba(0, 0, 0, 0.5);
 }
 
 /* Our plants section */
 .our-plants .section-intro h2, .latest-deals .section-intro h2{
     font-weight: bold;
-    font-size: 50px;
+    font-size: 3.13rem;
 }
 .our-plants .section-intro span, .latest-deals .section-intro span{
     color: rgba(233, 90, 8, 1);
 }
 .our-plants .section-intro p, .latest-deals .section-intro p{
-    font-size: 22px;
+    font-size: 1.38rem;
     color: rgba(0, 0, 0, 0.5);
     max-width: 888px;
     margin: 16px auto 50px;
@@ -121,13 +121,13 @@ nav{
 }
 .plant h2{
     font-weight: 500;
-    font-size: 22px;
+    font-size: 1.38rem;
     color: rgba(17, 17, 17, 1);
 }
 .plant p{
     margin: 20px 0 30px;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 1.38rem;
     color: rgba(17, 17, 17, 1);
 }
 
@@ -147,7 +147,7 @@ nav{
 }
 .flower-plant-lover .right h1{
     font-weight: bold;
-    font-size: 50px;
+    font-size: 3.13rem;
     margin-bottom: 20px;
 }
 .flower-plant-lover .right ul{
@@ -157,7 +157,7 @@ nav{
     margin-bottom: 20px;
 }
 .flower-plant-lover .right p{
-    font-size: 22px;
+    font-size: 1.38rem;
     color: rgba(0, 0, 0, 0.5);
 }
 
@@ -189,7 +189,7 @@ nav{
 }
 .latest-deals .deals-container .left-container p{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: white;
     margin-bottom: 15px;
 }
@@ -199,13 +199,13 @@ nav{
 }
 .latest-deals .deals-container .right-container p{
     font-weight: bold;
-    font-size: 40px;
+    font-size: 2.5rem;
     color: white;
     margin-bottom: 20px;
 }
 .latest-deals .deals-container .right-container a{
     font-weight: 600;
-    font-size: 28px;
+    font-size: 1.75rem;
     color: white;
 }
 
@@ -217,7 +217,7 @@ nav{
 }
 .join-us h1{
     font-weight: bold;
-    font-size: 50px;
+    font-size: 3.13rem;
     margin-bottom: 25px;
     color: white;
 }
@@ -232,6 +232,7 @@ nav{
     font-family: inherit;
     color: rgba(0, 0, 0, 0.5);
     padding: 20px;
+    padding-right: 0;
     border: none;
     outline: none;
 }
@@ -247,7 +248,7 @@ footer .company img{
 }
 footer p{
     max-width: 360px;
-    font-size: 22px;
+    font-size: 1.38rem;
     color: rgba(0, 0, 0, 0.5);
 }
 footer li:not(:last-child){
@@ -270,4 +271,117 @@ footer .social-links{
 
 footer .social-links img{
     display: block;
+}
+
+
+/* Mobile Responsive Design */
+@media screen and (max-width:576px) {
+    /* Button */
+    .btn{
+        padding: 20px 20px;
+    }
+    /* Nav Bar */
+    nav{
+        padding: 0 16px;
+        margin-top: 15px;
+        margin-bottom: 28px;
+    }
+    .menu li:not(:last-child){
+        display: none;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+
+    /* Banner */
+    .banner{
+        margin-bottom: 70px;
+    }
+    .banner-img img{
+        width: 100%;
+    }
+    .banner-info{
+        padding: 0 16px;
+    }
+    .banner-info h1{
+        font-size: 2rem;
+    }
+
+    /* Our plants section */
+    .our-plants{
+        padding: 0 16px;
+    }
+    .our-plants .section-intro h2, .latest-deals .section-intro h2{
+        font-size: 2rem;
+    }
+    .plants-container{
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 70px;
+    }
+
+    /* Flower-plant-lover section*/
+    .flower-plant-lover{
+        flex-direction: column;
+        padding: 0 16px;
+        gap: 20px;
+        margin-bottom: 70px;
+    }
+    .flower-plant-lover .left img{
+        width: 100%;
+    }
+    .flower-plant-lover .right h1{
+        font-size: 1.5rem;
+    }
+
+    /* Latest deals section */
+    .latest-deals{
+        padding: 0 16px;
+    }
+    .latest-deals .deals-container{
+        flex-direction: column;
+        margin-bottom: 70px;
+    }
+    .latest-deals .deals-container .left-container div:nth-child(1){
+        width: 100%;
+    }
+    .latest-deals .deals-container .left-container div:nth-child(2){
+        width: 100%;
+        border-radius: 0;
+        margin-bottom: 25px;
+    }
+    .latest-deals .deals-container .right-container{
+        width: 100%;
+        height: 201px;
+        border-radius: 16px;
+    }
+    .latest-deals .deals-container .right-container p{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .latest-deals .deals-container .right-container a{
+        font-size: 1rem;
+    }
+
+    /* Join-us section */
+    .join-us{
+        padding: 110px 0 60px;
+        background:  url("../assets/news-letter-bg.png") center / cover no-repeat;
+        margin-bottom: 60px;
+    }
+    .join-us h1{
+        font-size: 1.5rem;
+        margin-bottom: 25px;
+        color: white;
+    }
+    .join-us form{
+        margin: 0 20px;
+    }
+
+    /* Footer styles */
+    .footer{
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 20px;
+        padding: 0 16px;
+    }
 }
