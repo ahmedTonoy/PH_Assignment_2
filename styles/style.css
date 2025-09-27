@@ -233,4 +233,41 @@ nav{
     color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border: none;
+    outline: none;
+}
+
+/* Footer styles */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+footer .company img{
+    margin-bottom: 16px;
+}
+footer p{
+    max-width: 360px;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+}
+footer li:not(:last-child){
+    margin-bottom: 32px;
+}
+footer li{
+    list-style: none;
+}
+footer li a{
+    text-decoration: none;
+    color: rgba(107, 114, 128, 1);
+}
+
+footer .social-links{
+    display: flex;
+    gap: 24px;
+    height: fit-content;
+    align-items: center;
+}
+
+footer .social-links img{
+    display: block;
 }
