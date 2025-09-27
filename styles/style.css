@@ -42,6 +42,16 @@
     align-items: center;
 }
 
+/* Animation */
+@keyframes rotating-badge{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 
 /* Header styles */
 
@@ -141,9 +151,19 @@ nav{
 }
 .flower-plant-lover .left{
     background: linear-gradient(to top, rgba(233, 90, 8, 1), rgba(103, 171, 234, 0.4));
+    position: relative;
 }
 .flower-plant-lover .left img{
     display: block;
+}
+.flower-plant-lover .left .trusted-badge{
+    position: absolute;
+    top: -20%;
+    right: -15%;
+    animation: rotating-badge 4s linear infinite;
+}
+.flower-plant-lover .left .trusted-badge img{
+    width: 285px;
 }
 .flower-plant-lover .right h1{
     font-weight: bold;
@@ -331,6 +351,9 @@ footer .social-links img{
     }
     .flower-plant-lover .right h1{
         font-size: 1.5rem;
+    }
+    .trusted-badge{
+        display: none;
     }
 
     /* Latest deals section */
