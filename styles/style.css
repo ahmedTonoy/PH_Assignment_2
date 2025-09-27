@@ -29,7 +29,7 @@
     text-align: center;
 }
 .btn{
-    padding: 20px 80px;
+    padding: 20px 0;
     font-weight: 600;
     color: white;
     background-color: rgba(233, 90, 8, 1);
@@ -71,9 +71,7 @@ nav{
     justify-content: space-between;
     margin-bottom: 120px;
 }
-.banner img{
-    width: 100%;
-}
+
 .banner-info h1{
     font-weight: bold;
     font-size: 65px;
@@ -105,6 +103,7 @@ nav{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px 20px;
+    margin-bottom: 210px;
 }
 .plant{
     display: flex;
@@ -124,4 +123,34 @@ nav{
     font-weight: bold;
     font-size: 22px;
     color: rgba(17, 17, 17, 1);
+}
+
+/* Flower-plant-lover section*/
+.flower-plant-lover{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 130px;
+}
+.flower-plant-lover .left{
+    background: linear-gradient(to top, rgba(233, 90, 8, 1), rgba(103, 171, 234, 0.4));
+}
+.flower-plant-lover .left img{
+    display: block;
+}
+.flower-plant-lover .right h1{
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.flower-plant-lover .right ul{
+    margin-left: 35px;
+}
+.flower-plant-lover .right li{
+    margin-bottom: 20px;
+}
+.flower-plant-lover .right p{
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
 }
