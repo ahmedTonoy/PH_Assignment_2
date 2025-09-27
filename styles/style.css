@@ -35,6 +35,12 @@
     background-color: rgba(233, 90, 8, 1);
     border: none;
 }
+.items-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 
 /* Header styles */
@@ -86,14 +92,14 @@ nav{
 }
 
 /* Our plants section */
-.our-plants .section-intro h2{
+.our-plants .section-intro h2, .latest-deals .section-intro h2{
     font-weight: bold;
     font-size: 50px;
 }
-.our-plants .section-intro span{
+.our-plants .section-intro span, .latest-deals .section-intro span{
     color: rgba(233, 90, 8, 1);
 }
-.our-plants .section-intro p{
+.our-plants .section-intro p, .latest-deals .section-intro p{
     font-size: 22px;
     color: rgba(0, 0, 0, 0.5);
     max-width: 888px;
@@ -153,4 +159,52 @@ nav{
 .flower-plant-lover .right p{
     font-size: 22px;
     color: rgba(0, 0, 0, 0.5);
+}
+
+/* Latest deals section */
+.latest-deals .deals-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+.latest-deals .deals-container .left-container div:nth-child(1){
+    width: 367px;
+    height: 201px;
+    margin-bottom: 25px;
+    border-radius: 14px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/deal-bloom.png") center / cover no-repeat;
+}
+.latest-deals .deals-container .left-container div:nth-child(2){
+    width: 367px;
+    height: 201px;
+    border-radius: 14px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/deal-ana.png") center / cover no-repeat;
+}
+.latest-deals .deals-container .right-container{
+    width: 753px;
+    height: 427px;
+    border-radius: 22px;
+    background-color: rgba(0, 0, 0, 0.4);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/deal-zabo.png") center / cover no-repeat;
+}
+.latest-deals .deals-container .left-container p{
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 15px;
+}
+.latest-deals .deals-container .left-container a{
+    font-weight: 600;
+    color: white;
+}
+.latest-deals .deals-container .right-container p{
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 20px;
+}
+.latest-deals .deals-container .right-container a{
+    font-weight: 600;
+    font-size: 28px;
+    color: white;
 }
