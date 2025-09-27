@@ -17,7 +17,7 @@
                 <li><a href="">Home</a></li>
                 <li><a class="light" href="">Shop</a></li>
                 <li><a class="light" href="">About Us</a></li>
-                <li><a href="#cart-alert"><i class="fa-solid fa-cart-shopping"></i> Cart ($56)</a></li>
+                <li><a href=""><i class="fa-solid fa-cart-shopping"></i> Cart ($56)</a></li>
             </ul>
         </nav>
 
@@ -25,7 +25,7 @@
         <div id="cart-alert" class="alert">
             <h3>Flower Added to Cart <i class="fa-solid fa-cart-shopping"></i> <span class="green-tick"><i class="fa-solid fa-square-check"></i></span></h3>
             <div class="close-alert">
-                <a href="#"><i class="fa-solid fa-delete-left"></i></a>
+                <a href="#plants"><i class="fa-solid fa-delete-left"></i></a>
             </div>
         </div>
 
@@ -40,7 +40,7 @@
         </div>
     </header>
     <main>
-        <section class="our-plants container">
+        <section id="plants" class="our-plants container">
             <div class="section-intro text-center">
                 <h2 class="noto-serif"><span>Our</span> Plants</h2>
                 <p class="inter">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
@@ -56,7 +56,9 @@
                     <img src="./assets/sample-flower-image.png" alt="">
                     <h2>Lilly Blossom</h2>
                     <p>20 USD</p>
-                    <button class="btn">ADD TO CART</button>
+                    <form action="#cart-alert">
+                        <button type="submit" class="btn">ADD TO CART</button>
+                    </form>
                 </div>
                 <div class="plant inter text-center">
                     <img src="./assets/sample-flower-image.png" alt="">

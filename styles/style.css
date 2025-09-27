@@ -52,6 +52,37 @@
     }
 }
 
+/* Optional Task: Alert Message styles */
+.alert{
+    opacity: 0;
+    border: 4px solid black;
+    border-radius: 8px;
+    width: 340px;
+    padding: 10px 0px;
+    text-align: center;
+    position: fixed;
+    top: 60px;
+    right: 0px;
+    background-color: bisque;
+    transform: translateY(-60px);
+    transition: opacity 0.2s, transform 0.3s ease-in-out;
+}
+.alert:target{
+    opacity: 1;  
+    transform: translateY(0px);
+}
+.close-alert a{
+    font-size: 1.2rem;
+    color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.green-tick{
+    font-size: 1.2rem;
+    color: rgb(11, 188, 11);
+}
+
 
 /* Header styles */
 
@@ -79,37 +110,6 @@ nav{
 .menu li a{
     text-decoration: none;
     color: rgba(37, 36, 50, 1);
-}
-
-/* Optional Task: Alert Message styles */
-.alert{
-    opacity: 0;
-    border: 4px solid black;
-    border-radius: 8px;
-    width: 340px;
-    padding: 10px 0px;
-    text-align: center;
-    position: fixed;
-    top: 100px;
-    right: 0px;
-    background-color: bisque;
-    transform: translateY(-100px);
-    transition: opacity 0.2s, transform 0.3s ease-in-out;
-}
-.alert:target{
-    opacity: 1;  
-    transform: translateY(0px);
-}
-.close-alert a{
-    font-size: 1.2rem;
-    color: red;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-.green-tick{
-    font-size: 1.2rem;
-    color: rgb(11, 188, 11);
 }
 
 /* Banner */
@@ -155,6 +155,13 @@ nav{
 .plant{
     display: flex;
     flex-direction: column;
+    /* width: 100%; */
+}
+.plant form{
+    display: flex;
+}
+.plant form button{
+    flex: 1;
 }
 .plant img{
     margin-bottom: 30px;
