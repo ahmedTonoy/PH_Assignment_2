@@ -29,7 +29,7 @@
     text-align: center;
 }
 .btn{
-    padding: 20px 0;
+    padding: 20px 60px;
     font-weight: 600;
     color: white;
     background-color: rgba(233, 90, 8, 1);
@@ -207,4 +207,30 @@ nav{
     font-weight: 600;
     font-size: 28px;
     color: white;
+}
+
+/* Join-us section */
+.join-us{
+    padding: 195px 0;
+    background:  url("../assets/news-letter-bg.png") center / cover no-repeat;
+    margin-bottom: 50px;
+}
+.join-us h1{
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 25px;
+    color: white;
+}
+.join-us form{
+    max-width: 830px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+.join-us form input[type="email"]{
+    font-family: inherit;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border: none;
 }
